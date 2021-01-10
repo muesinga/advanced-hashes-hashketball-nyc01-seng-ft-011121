@@ -184,10 +184,10 @@ def player_stats(input)
   game_hash.each do |key, value|
     team_info.each do |key, value|
       if key == :players
-        value.each do |player|
-          if input == player[:player_name]
-            player.delete(:player_name)
-            return player
+        value.each do |variable|
+          if input == variable[:player_name]
+            variable.delete(:player_name)
+            return variable
           end
         end
       end
