@@ -170,8 +170,8 @@ def player_numbers(input)
     if value[:team_name] == input 
       value.each do |key, value|
         if key == :players
-          value.each do |player|
-          output.push(player[:number])
+          value.each do |variable|
+          output.push(variable[:number])
           end
         end
       end
@@ -184,6 +184,13 @@ def player_stats(input)
   game_hash.each do |key, value|
       value.each do |key, value|
         if key == :players
-          value.each do |player|
-            output.push(player[])
-    
+          value.each do |variable|
+           if input == variable[:player_name]
+            player.delete(:player_name)
+            return player
+          end
+        end
+      end
+    end
+  end
+end
