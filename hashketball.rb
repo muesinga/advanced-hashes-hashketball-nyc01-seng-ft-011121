@@ -186,7 +186,6 @@ def player_stats(input)
       if key == :players
         value.each do |variable|
           if input == variable[:player_name]
-            variable.delete(:player_name)
             return variable
           end
         end
