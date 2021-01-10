@@ -184,4 +184,6 @@ def player_stats(input)
   output = []
   game_hash.each do |key, value|
       value.each do |key, value|
+        if key == :players
+          value.each do 
     
