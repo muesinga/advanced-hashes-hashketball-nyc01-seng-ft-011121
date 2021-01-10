@@ -182,7 +182,7 @@ end
 
 def player_stats(input)
   game_hash.each do |key, value|
-    team_info.each do |key, value|
+    value.each do |key, value|
       if key == :players
         value.each do |variable|
           if input == variable[:player_name]
