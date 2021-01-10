@@ -200,8 +200,8 @@ def big_shoe_rebounds
   game_hash.each do |key, value|
     value[:players].each do |variable|
       if variable[:shoe] > shoes
-        shoes = player[:shoe]
-        rebounds = player[:rebounds]
+        shoes = variable[:shoe]
+        rebounds = variable[:rebounds]
       end
     end
   end
