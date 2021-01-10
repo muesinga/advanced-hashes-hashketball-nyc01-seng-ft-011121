@@ -196,10 +196,10 @@ def player_stats(input)
 end
 
 def big_shoe_rebounds
-  big_shoe = 0
+  shoes = 0
   rebounds = 0
   game_hash.each do |key, value|
-    team_info[:players].each do |variable|
+    value[:players].each do |variable|
       if variable[:shoe] > big_shoe
         big_shoe = variable[:shoe]
         rebounds = variable[:rebounds]
