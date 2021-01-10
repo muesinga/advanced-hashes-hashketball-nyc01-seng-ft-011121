@@ -186,5 +186,5 @@ def player_stats(input)
       value.each do |key, value|
         if key == :players
           value.each do |player|
-            output.push()
+            output.push(player[])
     
